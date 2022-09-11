@@ -1,0 +1,112 @@
+html{
+    height: 100vh;
+}
+
+body{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    min-height: 100vh;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: #283618;
+}
+.aside{
+    grid-area: aside;
+    background-color: #FEFAE0;
+}
+.productos{
+    grid-area: productos;
+    background-color: #FEFAE0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer{
+    grid-area: footer;
+    background-color: #606C38;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: 
+    "navbar navbar navbar navbar"
+    "aside productos productos productos"
+    "aside productos productos productos"
+    "footer footer footer footer";
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.flex-aside{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.flex-aside ul{
+    padding: 0;
+    margin:0
+}
+.flex-aside li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.flex-aside span{
+    color: rgb(100, 91, 91);
+}
+.flex-aside li:hover{
+    background-color: #DDA15E;
+    font-weight: bolder;
+}
+
+.container-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    height: 500px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: visible;
+}
+
+.imagen-producto{
+    height: 70%;
+}
+.imagen-producto img{
+    width: 100%;
+    height: 100%;
+}
+
+.descripcion-producto{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descripcion-producto button{
+    padding-block: 10px;
+    width: 100%;
+    background-color: #BC6C25;
+    color: white;
+}
+.descripcion-producto button:hover{
+    background-color: #DDA15E;
+}
+
+.flex-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
